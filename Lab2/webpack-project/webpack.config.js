@@ -19,12 +19,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
       template: path.resolve(__dirname, "./src/index.html"),
-      filename: "firstPage.html",
+      filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
       template: path.resolve(__dirname, "./src/about.html"),
-      filename: "secondPage.html",
+      filename: "about.html",
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ["dist/*"],
