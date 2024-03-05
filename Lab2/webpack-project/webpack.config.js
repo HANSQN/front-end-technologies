@@ -13,11 +13,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
-      template: path.resolve(__dirname, "./src/template.html"),
-      filename: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      title: "webpack Boilerplate",
       template: path.resolve(__dirname, "./src/index.html"),
       filename: "index.html",
     }),
