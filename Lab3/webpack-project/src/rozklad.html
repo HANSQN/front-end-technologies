@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: #1abc9c;
+      }
+      .navbar a {
+        color: #ffffff;
+      }
+      .bg-1 {
+        background-color: #1abc9c;
+        color: #ffffff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .bg-2 {
+        background-color: #474e5d;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .bg-3 {
+        background-color: #ffffff;
+        color: #555555;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .card {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна сторінка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photo.html">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Новини</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-3 text-center">
+      <div class="container">
+        <h3>Розклад занять</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">День</th>
+                <th scope="col">Час</th>
+                <th scope="col">Предмет</th>
+                <th scope="col">Викладач</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="1">Понеділок</td>
+                <td>14:30 - 15:50</td>
+                <td>Основи програмної інженерії</td>
+                <td>Лимаренко Ю.О.</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>11:25 - 12:45</td>
+                <td>Front-end технології</td>
+                <td>Панасенко Є.В.</td>
+              </tr>
+              <tr>
+                <td>12:55 - 14:15</td>
+                <td>Front-end технології</td>
+                <td>Лісняк А.О.</td>
+              </tr>
+              <tr>
+                <td rowspan="5">Середа</td>
+                <td>11:25 - 12:45</td>
+                <td>За чисельником: Основи DevOps</td>
+                <td>Гоменюк С.І.</td>
+              </tr>
+              <tr>
+                <td>11:25 - 12:45</td>
+                <td>За знаменником: немає пари</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>12:55 - 14:15</td>
+                <td>
+                  Основи автоматизованого проєктування складних об'єктів і
+                  систем
+                </td>
+                <td>Гребенюк С.М.</td>
+              </tr>
+              <tr>
+                <td>14:30 - 15:50</td>
+                <td>Основи DevOps</td>
+                <td>Гоменюк С.І.</td>
+              </tr>
+              <tr>
+                <td>16:05 - 17:25</td>
+                <td>
+                  Основи автоматизованого проєктування складних об'єктів і
+                  систем
+                </td>
+                <td>Гребенюк С.М.</td>
+              </tr>
+              <tr>
+                <td>Четвер</td>
+                <td>Вихідний</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td rowspan="5">П'ятниця</td>
+                <td>11:25 - 12:45</td>
+                <td>Основи розробки Web-сайтів</td>
+                <td>Панасенко Є.В.</td>
+              </tr>
+              <tr>
+                <td>12:55 - 14:15</td>
+                <td>Основи програмної інженерії</td>
+                <td>Лебідь М.В.</td>
+              </tr>
+              <tr>
+                <td>14:30 - 15:50</td>
+                <td>Системи віртуалізації та контейнеризації</td>
+                <td>Мухін В.В.</td>
+              </tr>
+              <tr>
+                <td>16:05 - 17:25</td>
+                <td>
+                  За чисельником: Системи віртуалізації та контейнеризації
+                </td>
+                <td>Мухін В.В.</td>
+              </tr>
+              <tr>
+                <td>16:05 - 17:25</td>
+                <td>За знаменником: немає пари</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
