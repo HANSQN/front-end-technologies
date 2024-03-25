@@ -42,6 +42,18 @@ module.exports = {
         },
       ],
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src/scss/style.css"),
+          to: path.resolve(__dirname, "dist/scss"),
+        },
+        {
+          from: path.resolve(__dirname, "src/scss/normalize.css"),
+          to: path.resolve(__dirname, "dist/scss"),
+      },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css",
