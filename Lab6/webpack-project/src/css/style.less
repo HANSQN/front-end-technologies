@@ -1,0 +1,82 @@
+@import 'normalize.css';
+
+@primary-color: #7E07A9;
+@secondary-color: #67237F;
+@tertiary-color: #52026E;
+@accent-color: #AC3BD4;
+@highlight-color: #B764D4;
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, @highlight-color, @accent-color, @primary-color, @secondary-color, @tertiary-color);
+}
+
+.container {
+  width: 100%; /* Зафіксована ширина контенту */
+  margin: 0 auto; /* Вирівнює контент по центру */
+  padding: 0 15px; /* Встановлює відступи зліва та справа */
+}
+
+.navbar {
+  background-color: @tertiary-color;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+.bg-1 {
+  background-color: @primary-color;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bg-2 {
+  background-color: @secondary-color;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bg-3 {
+  background-color: @tertiary-color;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.rozklad {
+  background-color: linear-gradient(to bottom, @highlight-color, @accent-color, @primary-color, @secondary-color, @tertiary-color);
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  background-color: @accent-color;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  color: #ffffff;
+}
+.card-date,
+.card-title,
+.btn {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: @tertiary-color;
+  border-color: @tertiary-color;
+}
+
+.btn-primary:hover {
+  background-color: @highlight-color;
+  border-color: @highlight-color;
+}
+
+.table {
+  background-color: white;
+}

@@ -16,14 +16,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.less$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'less-loader',
         ],
       },
-      
     ],
   },
   plugins: [
@@ -54,21 +53,17 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "src/assets/images"),
-          to: path.resolve(__dirname, "dist/images"),
+          to: path.resolve(__dirname, "dist/assets/images"),
         },
         {
-          from: path.resolve(__dirname, "src/scss/style.css"),
-          to: path.resolve(__dirname, "dist/scss"),
-        },
-        {
-          from: path.resolve(__dirname, "src/scss/normalize.css"),
-          to: path.resolve(__dirname, "dist/scss"),
-      },
+          from: path.resolve(__dirname, "src/css/style.less"),
+          to: path.resolve(__dirname, "dist/css"),
+        },        
       ],
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
+      filename: "css/style.css", 
+      chunkFilename: "css/[id].css", 
     }),
   ],
 };
