@@ -1,0 +1,26 @@
+.navbar, .footer {
+    display: none !important;
+}
+
+.container-fluid, .bg-1, .bg-2, .bg-3 {
+    background: none !important;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    font-family: "Times New Roman", Georgia, Palatino, serif !important;
+    color: black !important;
+}
+
+body {
+    margin: 50px !important;
+}
+
+/* Замінюємо посилання на URL */
+a {
+    color: black !important; /* Зберігаємо колір тексту, який встановлений в батьківському елементі */
+    text-decoration: none !important; /* Прибираємо підкреслення */
+}
+
+a::after {
+    content: " [" attr(href) "]"; /* Виводимо URL в квадратних дужках після посилань */
+}
