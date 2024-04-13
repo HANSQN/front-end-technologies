@@ -148,3 +148,7 @@ body {
     width: 50rem;
     max-width: 95%;
 }
+
+.center {
+  text-align: center;
+}
